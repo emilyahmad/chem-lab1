@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="chem-lab1"
+run/main_scene="uid://bp560g3d78nr4"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
