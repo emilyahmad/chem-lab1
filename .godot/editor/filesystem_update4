@@ -1,1 +1,7 @@
 res://scenes/main.tscn
+res://Scenes/main.tscn
+res://player.tscn
+res://scenes/main.gd
+res://README.md
+res://objects/player.tscn
+res://scripts/player.gd

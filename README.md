@@ -5,7 +5,7 @@ Godot plugin for metrics, insights, and time tracking automatically generated fr
 - [godot-wakatime](#godot-wakatime)
   - [Dependencies](#dependencies)
   - [Installation](#installation)
-    - [Activation](#activation)
+	- [Activation](#activation)
   - [Configuration](#configuration)
   - [Supported Godot \<\> Plugin versions](#supported-godot--plugin-versions)
 
@@ -70,3 +70,29 @@ Some settings are available in the editor bottom panel as soon as the plugin is 
 Tested **Windows** and **Linux**.
 
 It has Mac OS support as well, but has not yet been tested.
+
+
+some ideas
+
+#extends Node3D
+#
+#tutorial=
+#
+#extract psuedophedine with water, alcohol
+#& coffee filters from OTC cough medicine
+#
+#red phosphorus reduces elemental iodine (I2)
+#to HI (recycle reformed I2 collected in
+#matchbook striker pads/road signs)
+#
+#I2 crystals extracted from disinfectants
+#
+#once readied, pseudoephedrine, I2 & red
+#phosphorus placed in boiling flask w/ water
+#& heated @ different lengths =>
+#
+#deep purple solution (bc of I2)
+#
+#**survival mode:
+#make sure to vent toxic phosphine gas
+#produced from heading

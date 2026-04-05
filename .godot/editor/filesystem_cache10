@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1775339203
+::res://::1775407838
 icon.png::CompressedTexture2D/CompressedTexture2D::5104731517343546433::1775251875::1775252091::1::::<><><>0<>0<>5d4a152414406ddd000098a4d26eebda<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6432943538567974701::1775251794::1775252091::1::::<><><>0<>0<>9dcee25fac6157228d1880267a7acd6c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 node_3d.tscn::PackedScene/PackedScene::4008811973211020382::1775254393::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::5361279634915408792::1775407838::0::1::::<><><>0<>0<><>::uid://c6f0hn0hssmo::::res://scripts/player.gd
 README.md::TextFile/TextFile::-1::1775251875::0::1::::<><><>0<>0<><>::
 wakatime_logo.jpg::CompressedTexture2D/CompressedTexture2D::18246814821071646::1775251875::1775252091::1::::<><><>0<>0<>be7f31b1e426e1c645d7c91620eecf39<>res://.godot/imported/wakatime_logo.jpg-a50f628e445fd6bef17dff1651d611bc.ctex::
 ::res://addons/::1775251875
@@ -11,3 +12,11 @@ api_key_prompt.tscn::PackedScene/PackedScene::7230738953370575059::1775251875::0
 heartbeat.gd::GDScript/GDScript::1726727924186548158::1775251875::0::1::::<>RefCounted<><>0<>0<><>::
 plugin.cfg::TextFile/TextFile::-1::1775251875::0::1::::<><><>0<>0<><>::
 wakatime.gd::GDScript/GDScript::2971076906962620835::1775251875::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://audio/::1775406825
+::res://objects/::1775406830
+::res://scenes/::1775407838
+main.gd::GDScript::7694365909529496938::1775407838::0::1::::<>RefCounted<><>0<>0<><>::
+main.tscn::PackedScene::3503111901083769083::1775407842::0::1::::<><><>0<>0<><>::uid://cinbq0deuhni3::::res://player.tscn
+::res://scripts/::1775407838
+player.gd::GDScript::204722016355249614::1775407671::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://sprites/::1775406839
