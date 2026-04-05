@@ -1,6 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bp560g3d78nr4"]
+[gd_scene load_steps=12 format=3 uid="uid://bp560g3d78nr4"]
 
+[ext_resource type="ArrayMesh" uid="uid://bprv35tpjfskh" path="res://models/grass.res" id="1_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cinbq0deuhni3" path="res://objects/player.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://chcr76wsux2ln" path="res://models/tavern.glb" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://p38wx47g1qal" path="res://models/CliffProps/cliffProps1.glb" id="3_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://bvd3gbyumhngp" path="res://models/CliffProps/cliffProps2.glb" id="4_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bcsaby2c1451s" path="res://objects/tree.tscn" id="5_tbgi4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sugp2"]
 size = Vector3(50, 1, 50)
@@ -11,6 +16,12 @@ albedo_color = Color(0.641877, 0.493822, 0.431696, 1)
 [sub_resource type="QuadMesh" id="QuadMesh_tbgi4"]
 size = Vector2(50, 50)
 orientation = 1
+
+[sub_resource type="MultiMesh" id="MultiMesh_o6xl0"]
+mesh = ExtResource("1_tefeu")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tefeu"]
+size = Vector3(9.12384, 2.04233, 2.22849)
 
 [node name="World" type="Node3D"]
 
@@ -24,8 +35,52 @@ shape = SubResource("BoxShape3D_sugp2")
 material_override = SubResource("StandardMaterial3D_jyhfs")
 mesh = SubResource("QuadMesh_tbgi4")
 
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="Floor"]
+multimesh = SubResource("MultiMesh_o6xl0")
+
 [node name="Player" parent="." instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00033617, 0.984703, -5.00679e-06)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0.000458875, -0.000186251, 0.000187515, -0.00276599, 0.999996, 0.00045836, -0.999996, -0.00276608, 0, 6, 0)
+
+[node name="tavern" parent="." instance=ExtResource("2_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0767837, 0.00858308, -4.85772)
+
+[node name="Cliff" type="StaticBody3D" parent="."]
+
+[node name="cliffProps1" parent="Cliff" instance=ExtResource("3_jyhfs")]
+transform = Transform3D(-0.940757, 0, -0.339083, 0, 1, 0, 0.339083, 0, -0.940757, -6.32361, 9.53674e-07, 22.9139)
+
+[node name="cliffProps2" parent="Cliff" instance=ExtResource("4_tbgi4")]
+transform = Transform3D(-0.940757, 0, -0.339083, 0, 1, 0, 0.339083, 0, -0.940757, -3.76353, 1.01998, 23.5904)
+
+[node name="cliffProps3" parent="Cliff" instance=ExtResource("4_tbgi4")]
+transform = Transform3D(-0.940757, 0, -0.339083, 0, 1, 0, 0.339083, 0, -0.940757, -8.97806, 1, 23.4083)
+
+[node name="cliffProps4" parent="Cliff" instance=ExtResource("3_jyhfs")]
+transform = Transform3D(0.875653, 0.0289271, 0.482074, 0.0335594, -0.999436, -0.000986639, 0.481774, 0.0170421, -0.87613, -7.6531, 1.17999, 22.9023)
+
+[node name="cliffProps5" parent="Cliff" instance=ExtResource("4_tbgi4")]
+transform = Transform3D(0.875653, 0.0289271, 0.482074, 0.0335594, -0.999436, -0.000986639, 0.481774, 0.0170421, -0.87613, -10.257, 0.0889405, 23.1881)
+
+[node name="cliffProps6" parent="Cliff" instance=ExtResource("4_tbgi4")]
+transform = Transform3D(0.875653, 0.0289271, 0.482074, 0.0335594, -0.999436, -0.000986639, 0.481774, 0.0170421, -0.87613, -5.08102, 0.269556, 23.8222)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cliff"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.08776, 1.00939, 23.1705)
+shape = SubResource("BoxShape3D_tefeu")
+
+[node name="Trees" type="Node3D" parent="."]
+
+[node name="Tree" parent="Trees" instance=ExtResource("5_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.73037, 0, -10.9573)
+
+[node name="Tree2" parent="Trees" instance=ExtResource("5_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.68859, 0, -13.251)
+
+[node name="Tree3" parent="Trees" instance=ExtResource("5_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1588, 0, -7.82993)
+
+[node name="Tree4" parent="Trees" instance=ExtResource("5_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8413, 0, -3.59453)
