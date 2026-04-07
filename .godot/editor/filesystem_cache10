@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1775584809
+::res://::1775585816
 camera_3d.gd::GDScript/GDScript::697972055493948394::1775411608::0::1::::<>Camera3D<><>0<>0<><>::
-hud.tscn::PackedScene::4934502972209044672::1775583675::0::1::::<><><>0<>0<><>::
+hud.tscn::PackedScene/PackedScene::4934502972209044672::1775583675::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::5104731517343546433::1775251875::1775252091::1::::<><><>0<>0<>5d4a152414406ddd000098a4d26eebda<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6432943538567974701::1775251794::1775252091::1::::<><><>0<>0<>9dcee25fac6157228d1880267a7acd6c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 node_3d.tscn::PackedScene/PackedScene::4008811973211020382::1775254393::0::1::::<><><>0<>0<><>::
@@ -44,12 +44,12 @@ InteriorPack.glb::PackedScene/PackedScene::8563133886193200400::1775412595::1775
 stool.glb::PackedScene/PackedScene::7864759513010209102::1775412595::1775412812::1::::<><><>0<>0<>eca69a86c96f82acb8fce01ba7c55d9d<>res://.godot/imported/stool.glb-796c2abb1de0eab0c0d3ee122f23ade8.scn::
 storage.glb::PackedScene/PackedScene::3011832686202762970::1775412595::1775412812::1::::<><><>0<>0<>fa33e5e63a7a04fb44ca0764caf5f662<>res://.godot/imported/storage.glb-99e322c98e153af8b7eb95a9efdba7b0.scn::
 torch.glb::PackedScene/PackedScene::7704995795094579771::1775412595::1775412812::1::::<><><>0<>0<>9bc571f5efa00c6a2faf4091e697fe94<>res://.godot/imported/torch.glb-180b3f6409a067b40dbfe0a6766a0292.scn::
-::res://objects/::1775584369
-player.tscn::PackedScene::5361279634915408792::1775584369::0::1::::<><><>0<>0<><>::uid://c6f0hn0hssmo::::res://scripts/player.gd<>uid://j7dq6ox8sy5o::::res://camera_3d.gd
-tree.tscn::PackedScene::2563960258733060358::1775584369::0::1::::<><><>0<>0<><>::uid://c1s855tif52ry::::res://models/pinetree.glb
-::res://scenes/::1775584544
+::res://objects/::1775585227
+player.tscn::PackedScene::5361279634915408792::1775585227::0::1::::<><><>0<>0<><>::uid://c6f0hn0hssmo::::res://scripts/player.gd<>uid://j7dq6ox8sy5o::::res://camera_3d.gd
+tree.tscn::PackedScene::2563960258733060358::1775585227::0::1::::<><><>0<>0<><>::uid://c1s855tif52ry::::res://models/pinetree.glb
+::res://scenes/::1775585785
 main.gd::GDScript/GDScript::7694365909529496938::1775407838::0::1::::<>RefCounted<><>0<>0<><>::
-main.tscn::PackedScene::3503111901083769083::1775584544::0::1::::<><><>0<>0<><>::uid://bprv35tpjfskh::::res://models/grass.res<>uid://cinbq0deuhni3::::res://objects/player.tscn<>uid://chcr76wsux2ln::::res://models/tavern.glb<>uid://p38wx47g1qal::::res://models/CliffProps/cliffProps1.glb<>uid://bvd3gbyumhngp::::res://models/CliffProps/cliffProps2.glb<>uid://bcsaby2c1451s::::res://objects/tree.tscn<>uid://cckkspys8svtg::::res://hud.tscn
+main.tscn::PackedScene::3503111901083769083::1775585785::0::1::::<><><>0<>0<><>::uid://bprv35tpjfskh::::res://models/grass.res<>uid://cinbq0deuhni3::::res://objects/player.tscn<>uid://chcr76wsux2ln::::res://models/tavern.glb<>uid://p38wx47g1qal::::res://models/CliffProps/cliffProps1.glb<>uid://bvd3gbyumhngp::::res://models/CliffProps/cliffProps2.glb<>uid://bcsaby2c1451s::::res://objects/tree.tscn<>uid://cckkspys8svtg::::res://hud.tscn
 ::res://scripts/::1775414872
 player.gd::GDScript/GDScript::204722016355249614::1775414872::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://sprites/::1775412852

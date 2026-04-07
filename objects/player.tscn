@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cinbq0deuhni3"]
+[gd_scene load_steps=6 format=3 uid="uid://cinbq0deuhni3"]
 
 [ext_resource type="Script" uid="uid://c6f0hn0hssmo" path="res://scripts/player.gd" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://j7dq6ox8sy5o" path="res://camera_3d.gd" id="2_ykyjo"]
+[ext_resource type="PackedScene" uid="uid://bflh3u5xqrcct" path="res://models/Sword.glb" id="3_uxov2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sh265"]
 radius = 0.4
@@ -23,3 +24,9 @@ mesh = SubResource("CapsuleMesh_4flbx")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.456556, 0.329365)
 script = ExtResource("2_ykyjo")
+
+[node name="SwordPoint" type="Node3D" parent="Camera3D"]
+transform = Transform3D(0.4, 0, 0, 0, 0.380412, 0.12364, 0, -0.12364, 0.380412, -0.0511894, -0.105469, -0.0657521)
+
+[node name="Sword" parent="Camera3D/SwordPoint" instance=ExtResource("3_uxov2")]
+transform = Transform3D(-0.946458, 0.322827, 0, -0.322827, -0.946458, 0, 0, 0, 1, 0.744666, 0.306243, -0.485848)
