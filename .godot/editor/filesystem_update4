@@ -1,10 +1,3 @@
 res://scenes/main.tscn
-res://Scenes/main.tscn
-res://player.tscn
-res://scenes/main.gd
-res://README.md
 res://objects/player.tscn
-res://scripts/player.gd
-res://camera_3d.gd
-res://tree.tscn
 res://objects/tree.tscn
