@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bp560g3d78nr4"]
+[gd_scene load_steps=14 format=3 uid="uid://bp560g3d78nr4"]
 
 [ext_resource type="ArrayMesh" uid="uid://bprv35tpjfskh" path="res://models/grass.res" id="1_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cinbq0deuhni3" path="res://objects/player.tscn" id="2_0wfyh"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://p38wx47g1qal" path="res://models/CliffProps/cliffProps1.glb" id="3_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bvd3gbyumhngp" path="res://models/CliffProps/cliffProps2.glb" id="4_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://bcsaby2c1451s" path="res://objects/tree.tscn" id="5_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://cckkspys8svtg" path="res://hud.tscn" id="7_o6xl0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sugp2"]
 size = Vector3(50, 1, 50)
@@ -112,8 +111,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1588, 0, -7.82993)
 
 [node name="Tree4" parent="Trees" instance=ExtResource("5_tbgi4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8413, 0, -3.59453)
-
-[node name="CanvasLayer" parent="." instance=ExtResource("7_o6xl0")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_o6xl0")

@@ -1,3 +1,5 @@
 res://objects/player.tscn
-res://scenes/main.tscn
 res://objects/tree.tscn
+res://scenes/main.tscn
+res://scenes/HUD.tscn
+res://scripts/player.gd

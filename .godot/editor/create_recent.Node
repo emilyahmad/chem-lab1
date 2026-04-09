@@ -1,7 +1,9 @@
+Control
+TextureProgressBar
+Timer
 AnimationPlayer
 Node3D
 WorldEnvironment
-Control
 RichTextLabel
 CanvasLayer
 MultiMeshInstance3D
@@ -10,5 +12,3 @@ StaticBody3D
 DirectionalLight3D
 Camera3D
 MeshInstance3D
-CharacterBody3D
-CSGBox3D

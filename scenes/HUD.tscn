@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm4fv3tyniclk"]
+
+[ext_resource type="Script" uid="uid://mdcksud1318x" path="res://scripts/hud.gd" id="1_efote"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_efote")
