@@ -1,3 +1,6 @@
+CollisionShape3D
+StaticBody3D
+RayCast3D
 Control
 TextureProgressBar
 Timer
@@ -7,8 +10,5 @@ WorldEnvironment
 RichTextLabel
 CanvasLayer
 MultiMeshInstance3D
-CollisionShape3D
-StaticBody3D
 DirectionalLight3D
 Camera3D
-MeshInstance3D

@@ -10,7 +10,7 @@ const SPRINT_VELOCITY = 1.5
 var sensitivity = 0.003
 @onready var camera = $Camera3D
 
-@onready var staminaBar = $Player/StmainaBar/StaminaProgressBar
+@onready var staminaBar = $Player/StaminaBar/StaminaProgressBar
 
 var exhausted = true
 var exhaust_buffer = 3
@@ -20,6 +20,7 @@ var can_start_timer = true
 func _ready():
 	#staminaBar.value = 100.0
 	$StaminaBar/StaminaProgressBar.value = 100.0
+	$StaminaBar/StaminaProgressBar.visible = false
 	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -30,10 +31,13 @@ func _process(delta: float) -> void:
 	if exhausted == false && $StaminaBar/StaminaProgressBar.value != 100 or $StaminaBar/StaminaProgressBar.value == 0:
 		can_start_timer = true
 		if can_start_timer:
+			$StaminaBar/StaminaProgressBar.visible = true
 			stamina_timer += delta
 			if stamina_timer >= exhaust_buffer:
 				exhausted = true
 				can_start_timer = false
+#				fade out?
+				$StaminaBar/StaminaProgressBar.visible = false
 				stamina_timer = 0
 	if $StaminaBar/StaminaProgressBar.value == 100:
 		exhausted = false
@@ -47,6 +51,11 @@ func _unhandled_input(event):
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(70))
 
 func _physics_process(delta: float) -> void:
+	if %SeeCast.is_colliding():
+		var target = %SeeCast.get_collider()
+		print(target)
+	
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxvuidp2slym4"]
+
+[ext_resource type="PackedScene" uid="uid://br8vkv0j16my2" path="res://models/tavernprops/door.glb" id="1_ba8gm"]
+
+[node name="Door" type="StaticBody3D"]
+
+[node name="door" parent="." instance=ExtResource("1_ba8gm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.573544, 0.0445281, 2.46929)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
